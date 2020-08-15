@@ -34,6 +34,19 @@
   color: #63a35c;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .pl-k /* keyword, storage, storage.type */ {
   color: #a71d5d;
 }
